@@ -8,7 +8,7 @@ pipeline {
         stage ('Build Node.js package') {
             agent{
                 docker {
-                    image 'node:lts-buster-slim'
+                    image 'node:slim'
                 }
             }
             steps{
